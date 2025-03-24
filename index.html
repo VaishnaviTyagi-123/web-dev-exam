@@ -1,12 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <style type="text/css">
+        #head {
+            margin-left: 180px;
+        }
+
+        
+
+        @media screen and (orientation:landscape) {
+            .footer {
+                display: grid;
+                grid-template-columns: 4fr 2fr 2fr 2fr 2fr;
+            }
+            .about {
+            margin-left: 120px;
+        }
+        }
+
+        @media screen and (orientation:portrait) {
+            .dropdown {
+                display: none;
+            }
+            .about{
+                margin-left: 60px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    hisjsnn
-    
+    <header>
+
+        <span><img src="/public/images/logo.svg" alt="" height="50" width="100"></span>
+        <span class="d-inline-grid ms-lg-5" id="drop">
+            <div class="dropdown ms-1">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Categories
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Development</a></li>
+                    <li><a class="dropdown-item" href="#">Design</a></li>
+                    <li><a class="dropdown-item" href="#">Marketing</a></li>
+                    <li><a class="dropdown-item" href="#">Music</a></li>
+                    <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+                    <li><a class="dropdown-item" href="#">IT&Software</a></li>
+                </ul>
+            </div>
+        </span>
+
+        <span class="d-inline-grid" id="head">
+            <div class="dropdown">
+                <button class="btn btn-close-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Demos
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Home default</a></li>
+                    <li><a class="dropdown-item" href="#">Home education</a></li>
+                    <li><a class="dropdown-item" href="#">Home academy</a></li>
+                </ul>
+            </div>
+        </span>
+        <span class="d-inline-grid">
+            <div class="dropdown">
+                <button class="btn btn-close-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Pages
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Course</a></li>
+                    <li><a class="dropdown-item" href="#">About</a></li>
+                    <li><a class="dropdown-item" href="#">Hero Banner</a></li>
+                </ul>
+            </div>
+        </span>
+        <span class="d-inline-grid">
+            <div class="dropdown">
+                <button class="btn btn-close-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Accounts
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Instructor</a></li>
+                    <li><a class="dropdown-item" href="#">Student</a></li>
+                    <li><a class="dropdown-item" href="#">Admin</a></li>
+                </ul>
+            </div>
+        </span>
+        <span class="d-inline-grid">
+            <div class="dropdown">
+                <button class="btn btn-close-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    MegaMenu
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Market research</a></li>
+                    <li><a class="dropdown-item" href="#">Advertising</a></li>
+                    <li><a class="dropdown-item" href="#">Consumer Behaviour</a></li>
+                </ul>
+            </div>
+        </span>
+        </span>
+
+        <span class="ms-lg-5">
+            <input type="text" name="" id="" placeholder="Search" class="border rounded-2"><span
+                class="bi bi-search ms-3"></span>
+        </span>
+        <span><img src="/public/images/01.jpg" alt="" height="30" width="30" class="border rounded-5 ms-5"></span>
+    </header>
+    <hr>
+    <div class="about">
+        <img src="/public/images/exam1.png" alt="" width="250" class="rounded-4 m-2">
+        <img src="/public/images/exam2.png" alt="" width="250" class="rounded-4 m-2">
+        <img src="/public/images/exam3.png" alt="" width="250" class="rounded-4 m-2">
+        <img src="/public/images/exam4.png" alt="" width="250" class="rounded-4 m-2">
+    </div>
+
+    <h1 class="text-center mt-5">Most Popular Courses</h1>
+    <p class="text-center">Choose from hundreds of courses from specialist organizations</p>
+
+    <nav>
+        <ul class="nav nav-pills justify-content-center bg-info-subtle justify-content-evenly">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Web Design</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Development</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Graphic Design</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Marketing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Finance</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="mt-lg-5 ms-lg-4 d-flex justify-content-evenly" id="card1">
+        <div class="card" style="width: 15rem;">
+            <img src="/public/images/08.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Sketch from A to Z: for app designer</h5>
+                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+            </div>
+            <ul class="list-group list-group-flush list-unstyled">
+                <li><span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star" style="color: gold;"></span>4.0/5.0
+                </li>
+            </ul>
+            <div class="card-body">
+                <span class="me-3">12h 56 min</span>
+                <span>15 lectures</span>
+            </div>
+        </div>
+
+        <div class="card" style="width: 15rem;">
+            <img src="/public/images/02.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Graphic Design Masterclass</h5>
+                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+            </div>
+            <ul class="list-group list-group-flush list-unstyled">
+                <li><span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star" style="color: gold;"></span>4.0/5.0
+                </li>
+            </ul>
+            <div class="card-body">
+                <span class="me-3">12h 56 min</span>
+                <span>15 lectures</span>
+            </div>
+        </div>
+
+        <div class="card" style="width: 15rem;">
+            <img src="/public/images/03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Create a Design System in Figma</h5>
+                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+            </div>
+            <ul class="list-group list-group-flush list-unstyled">
+                <li><span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star" style="color: gold;"></span>4.0/5.0
+                </li>
+            </ul>
+            <div class="card-body">
+                <span class="me-3">12h 56 min</span>
+                <span>15 lectures</span>
+            </div>
+        </div>
+
+        <div class="card" style="width: 15rem;">
+            <img src="/public/images/07.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Deep Learning with React-Native</h5>
+                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+            </div>
+            <ul class="list-group list-group-flush list-unstyled">
+                <li><span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star" style="color: gold;"></span>4.0/5.0
+                </li>
+            </ul>
+            <div class="card-body">
+                <span class="me-3">12h 56 min</span>
+                <span>15 lectures</span>
+            </div>
+        </div>
+    </main>
+
+
+
+    <main class="mt-lg-5 ms-lg-4 d-flex justify-content-evenly" id="card2">
+        <div class="card" style="width: 15rem;">
+            <img src="/public/images/11.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Sketch from A to Z: for app designer</h5>
+                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+            </div>
+            <ul class="list-group list-group-flush list-unstyled">
+                <li><span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star" style="color: gold;"></span>4.0/5.0
+                </li>
+            </ul>
+            <div class="card-body">
+                <span class="me-3">12h 56 min</span>
+                <span>15 lectures</span>
+            </div>
+        </div>
+
+        <div class="card" style="width: 15rem;">
+            <img src="/public/images/12.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Graphic Design Masterclass</h5>
+                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+            </div>
+            <ul class="list-group list-group-flush list-unstyled">
+                <li><span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star" style="color: gold;"></span>4.0/5.0
+                </li>
+            </ul>
+            <div class="card-body">
+                <span class="me-3">12h 56 min</span>
+                <span>15 lectures</span>
+            </div>
+        </div>
+
+        <div class="card" style="width: 15rem;">
+            <img src="/public/images/04.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Create a Design System in Figma</h5>
+                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+            </div>
+            <ul class="list-group list-group-flush list-unstyled">
+                <li><span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star" style="color: gold;"></span>4.0/5.0
+                </li>
+            </ul>
+            <div class="card-body">
+                <span class="me-3">12h 56 min</span>
+                <span>15 lectures</span>
+            </div>
+        </div>
+
+        <div class="card" style="width: 15rem;">
+            <img src="/public/images/09.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Deep Learning with React-Native</h5>
+                <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+            </div>
+            <ul class="list-group list-group-flush list-unstyled">
+                <li><span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star-fill" style="color: gold;"></span>
+                    <span class="bi bi-star" style="color: gold;"></span>4.0/5.0
+                </li>
+            </ul>
+            <div class="card-body">
+                <span class="me-3">12h 56 min</span>
+                <span>15 lectures</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer ms-5 mt-lg-5">
+        <div>
+            <img src="/public/images/logo.svg" alt="" height="30" width="150">
+            <p>Eduport education theme, built specifically for the education centers which is dedicated to teaching and
+                involve learners.</p>
+        </div>
+
+        <div>
+            <div>
+                <h5>Company</h5>
+            </div>
+            <div>About us</div>
+            <div>Contact Us</div>
+            <div>Library</div>
+            <div>Career</div>
+        </div>
+        <div>
+            <div>
+                <h5>Community</h5>
+            </div>
+            <div>Documentation</div>
+            <div>Faq</div>
+            <div>Forum</div>
+            <div>Sitemap</div>
+        </div>
+        <div>
+            <div>
+                <h5>Teaching</h5>
+            </div>
+            <div>Become a teacher</div>
+            <div>How to guide</div>
+            <div>Terms & Conditions</div>
+        </div>
+        <div>
+            <div>
+                <h5>Contact</h5>
+            </div>
+            <div>Toll free:+1234 568 963
+                (9:AM to 8:PM IST)</div>
+            <div>Email:example@gmail.com</div>
+        </div>
+    </footer>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
